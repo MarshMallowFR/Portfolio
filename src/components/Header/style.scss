@@ -1,0 +1,61 @@
+#header {
+    background-image: url('../../images/cloud2.jpg');
+    background-size: cover;
+    height: 800px;
+    width: 100%;
+    display: grid;
+    grid-template-columns: 20% 20% 20% 20% 20%;
+    grid-template-rows: 33% 33% 33%;
+
+    &-welcome {
+        background-color: black;
+        border-radius: 50%;
+        color: white;
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        align-items: center;
+        justify-content: center;
+        grid-column: 3;
+        grid-row: 2;
+
+        &-name {
+            font-size: 1.5em;
+            margin: 0;
+        }
+        &-job {
+            font-style: italic;
+            margin: 0;
+        }
+
+        & hr {
+            color: white;
+            width: 25%;
+        }
+    }
+
+    &-logo {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    &-navigation{
+        grid-column: 5;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-top: 0;
+    }
+
+    // Flèche pour descendre
+    &-icon {
+        color: black;
+        grid-row: 3;
+        grid-column: 3;
+        display: flex;
+        justify-content: center;
+        width: 100%;
+        margin-top: 2.5em;
+    }
+}
