@@ -1,4 +1,3 @@
-import { Link } from "gatsby";
 // import PropTypes from "prop-types";
 import React from "react";
 import { Icon } from 'semantic-ui-react';
@@ -13,7 +12,7 @@ const Header = () => (
     <Logo />
     <Navigation />
     <Welcome />
-    <Link  id="header-icon"><Icon name="chevron down" size="huge" /></Link>
+    <a href="#about" id="header-icon"><Icon name="chevron down" size="huge" /></a>
   </div>
 )
 export default Header

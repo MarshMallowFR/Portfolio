@@ -3,14 +3,18 @@ import React from "react"
 
 import Layout from "../components/Layout"
 import 'semantic-ui-css/semantic.min.css'
-import Description from "../components/Description";
+import About from "../components/About";
 import Skills from "../components/Skills";
+import Story from "../components/Story";
+import Work from "../components/Work";
 // import SEO from "../components/seo"
 
 const IndexPage = () => (
   <Layout>
-    <Description />
+    <About />
     <Skills />
+    <Story />
+    <Work />
   </Layout>
 )
 

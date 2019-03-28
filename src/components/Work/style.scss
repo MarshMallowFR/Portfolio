@@ -1,0 +1,42 @@
+#work{
+    background-color: #EBEBEB;
+    height: 100vh;
+    display: grid;
+    grid-template-columns: 20% 20% 20% 20% 20%;
+    grid-template-rows: 20% 20% 20% 20% 20%;
+
+    &-links{
+        grid-column: 2 / 4;
+        grid-row: 2;
+    }
+
+    &-title{
+        grid-column: 4;
+        grid-row: 2;
+        display: flex;
+    align-self: flex-end;
+    }
+}
+
+.work-link{
+    width: 150px;
+    height: 150px;
+    margin: 1em;
+    
+    & img{
+        width: 100%;
+    }
+
+    &:hover{
+        width: 180px;
+        height: 180px; 
+    }
+}
+
+.row{
+    display: flex;
+
+    &:nth-child(2){
+        justify-content: center;
+    }
+}

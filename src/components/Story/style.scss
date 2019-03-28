@@ -1,0 +1,92 @@
+#story {
+    background-color: #FEFEFE;
+    height: 100vh;
+    width: 80%;
+    margin: auto;
+
+    &-title {
+    text-align: center;
+    margin: 3em 0 2em 0;
+    }
+
+    &-timeline {
+        position: relative;
+        box-sizing: border-box;
+    
+        & ul {
+            margin: 0;
+            padding: 0;
+        }
+    
+        & li {
+            box-sizing: border-box;
+            list-style: none;
+            position: relative;
+            width: 40%;
+            margin: 3em 3em 0;
+        }
+    
+        & li:nth-child(odd){
+            text-align: right;
+            clear: both;
+        }
+    
+        & li:nth-child(even){
+            float: right;
+            text-align: left;
+            clear: both;
+            margin-bottom: 3em;
+        }
+    
+        &-content{
+            padding-bottom: 20px;
+            
+            &-subtitle{
+                margin: 0;
+                padding: 0;
+                font-weight: 600;
+            }
+            &-text{
+                margin: 10px 0 0;
+                padding: 0;
+            }
+    
+            &-year{
+                margin: 3em;
+                padding: 0;
+            }
+        }
+    
+    }
+    
+    &-timeline::before {
+        content: '';
+        left: 50%;
+        width: 2px;
+        height: 80vh;
+        background-color: #EBEBEB;
+        position: absolute;
+    }
+
+}
+
+.timeline {
+
+    &-content{
+        padding-bottom: 20px;
+        
+        &-subtitle{
+            padding: 0.5em;
+            font-weight: 600;
+        }
+        &-text{
+            margin: 10px 0 0;
+            padding: 0;
+        }
+
+        &-year{
+            font-style: italic;
+        }
+    }
+}
+
