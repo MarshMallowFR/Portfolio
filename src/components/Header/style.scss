@@ -43,8 +43,26 @@
 
     &-navigation{
         position: absolute;
-        top: 90px;
+        top: 60px;
         right: 120px;
+
+        & a{
+            color: black;
+        }
+
+        & a:hover{
+            text-decoration: underline;
+        }
+        
+        & ul {
+            list-style: none;
+            display: flex
+        }
+
+        & ul li {
+            margin: 0 0.7em;
+            font-size: 1.5em;
+        }
     }
 
     // Flèche pour descendre

@@ -1,42 +1,101 @@
 #work{
     background-color: #EBEBEB;
     height: 100vh;
-    display: grid;
-    grid-template-columns: 20% 20% 20% 20% 20%;
-    grid-template-rows: 20% 20% 20% 20% 20%;
-
-    &-links{
-        grid-column: 2 / 4;
-        grid-row: 2;
-    }
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
 
     &-title{
-        grid-column: 4;
-        grid-row: 2;
+        margin-bottom: 4em;
+    }
+
+    &-links{
         display: flex;
-    align-self: flex-end;
     }
+
 }
 
-.work-link{
-    width: 150px;
-    height: 150px;
-    margin: 1em;
-    
-    & img{
-        width: 100%;
-    }
-
-    &:hover{
-        width: 180px;
-        height: 180px; 
-    }
-}
-
-.row{
+.view{
+    width: 200px;
+    height: 200px;
+    margin: 10px;
+    overflow: hidden;
+    position: relative;
+    text-align: center;
+    box-shadow: 1px 1px 2px #e6e6e6;
+    cursor: pointer;
+    background-color: #FEFEFE;
     display: flex;
-
-    &:nth-child(2){
-        justify-content: center;
-    }
+    justify-content: center;
+    align-items: center;
 }
+
+.view .mask, .view .content {
+    position: absolute;
+    overflow: hidden;
+    top: 0;
+    left: 0;
+    width: 200px;
+    height: 200px;
+}
+
+.view img {
+    display: block;
+    position: relative;
+    width: 100%;
+    padding: 1.2em;
+}
+
+.view h3 {
+    color: black;
+    text-align: center;
+    font-size: 17px;
+    padding: 10px;
+}
+
+.view p {
+    font-style: italic;
+    font-size: 1em;
+    color: black;
+    padding: 10px 20px 20px;
+    text-align: center
+}
+
+.link img { 	
+	transition: all 0.2s ease-in;
+}
+
+.link .mask { 
+	background-color: rgba(254, 254, 254, 0.7); 
+	width: 200px;
+	height: 200px;
+	opacity: 0;
+	transition: all 0.2s ease-in-out;
+}
+
+.link h3 {
+    border-bottom: 1px solid rgba(0, 0, 0, 0.3);
+    margin: 20px 40px 0px 40px;
+    transform: translate(200px, -200px);
+	transition: all 0.2s ease-in-out;
+}
+
+.link p { 
+	transform: translate(-200px, 200px);
+	transition: all 0.2s ease-in-out;
+}
+
+.link:hover .mask { 
+	opacity:1; 
+}	
+
+.link:hover h3 { 
+	transform: translate(0px,0px);
+	transition-delay: 0.3s; 
+}
+.link:hover p { 
+    transform: translate(0px,0px); 
+	transition-delay: 0.4s;
+}
+

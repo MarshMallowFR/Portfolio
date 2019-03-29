@@ -6,6 +6,14 @@ import { Icon } from 'semantic-ui-react';
 import './style.scss';
 
 const Navigation = () => (
-  <Icon id="header-navigation" name="bars" size="big" />
+  <div id="header-navigation">
+    <ul>
+      <a href="#about"><li>About me</li></a>
+      <a href="#skills"><li>Skills</li></a>
+      <a href="#story"><li>Story</li></a>
+      <a href="#work"><li>Work</li></a>
+      <a href="#"><li>Contact</li></a>
+    </ul>
+  </div>
 )
 export default Navigation

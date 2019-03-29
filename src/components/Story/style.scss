@@ -1,12 +1,16 @@
 #story {
     background-color: #FEFEFE;
-    height: 100vh;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
     width: 80%;
-    margin: auto;
+    padding: 6em;
 
     &-title {
     text-align: center;
-    margin: 3em 0 2em 0;
+    margin-bottom: 2em;
     }
 
     &-timeline {
@@ -63,7 +67,7 @@
         content: '';
         left: 50%;
         width: 2px;
-        height: 80vh;
+        height: 100%;
         background-color: #EBEBEB;
         position: absolute;
     }
