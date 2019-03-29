@@ -1,0 +1,50 @@
+#contact{
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    &-title{
+        margin: 2em auto;
+    }
+    &-form{
+        display: flex;
+        flex-direction: column;
+        width: 40%;
+
+        & input, textArea {
+            margin: 1em auto;
+            width: 100%;
+        }
+
+        & textArea {
+            height: 20vh;
+            border: 1px solid rgba(34,36,38,.15);
+
+            &::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+                padding: 0.5em;
+                color: #ddd9d9;
+            }
+            &::-moz-placeholder { /* Firefox 19+ */
+                padding: 0.5em;
+                color: #ddd9d9;
+            }
+            &:-ms-input-placeholder { /* IE 10+ */
+                padding: 0.5em;
+                color: #ddd9d9;
+            }
+            &:-moz-placeholder { /* Firefox 18- */
+                padding: 0.5em;
+                color: #ddd9d9;
+            }
+        }
+
+        & button {
+            margin: 1em auto;
+            width: 20%;
+        }
+
+        
+    }
+}

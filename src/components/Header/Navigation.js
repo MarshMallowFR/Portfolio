@@ -12,7 +12,7 @@ const Navigation = () => (
       <a href="#skills"><li>Skills</li></a>
       <a href="#story"><li>Story</li></a>
       <a href="#work"><li>Work</li></a>
-      <a href="#"><li>Contact</li></a>
+      <a href="#contact"><li>Contact</li></a>
     </ul>
   </div>
 )

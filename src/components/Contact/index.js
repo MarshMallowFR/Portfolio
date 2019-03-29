@@ -1,20 +1,22 @@
 import React from 'react';
+import { Icon, Input, TextArea, Button } from 'semantic-ui-react';
 
-import './style.scss'
+import './style.scss';
 
-const Contact = () => {
+const Contact = () => (
+    <div id="contact">
+        <h2 id="contact-title">Contact me</h2>
+        <form id="contact-form" method="POST" action="https://formspree.io/jeremie.aubeau@hotmail.com" >
+            <Input type="text" name="name" placeholder="Your name" />
+            <Input iconPosition='left' type="email" name="email" placeholder='Email'>
+                <Icon name='at' />
+                <input />
+            </Input>
+            <TextArea name="message" placeholder="Enter your message" />
+            <Button type="submit" content="Send it" />
+        </form>
+    </div>
+)
 
-    return(
-        <div id="contact">
-            <h2 id="contact-title">Contact me</h2>
-            <form id="contact-form" method="POST" action="https://formspree.io/jeremie.aubeau@hotmail.com">
-                <input type="text" name="name" placeholder="Your name" />
-                <input type="email" name="email" placeholder="Your email" />
-                <textarea name="message" placeholder="Test Message">Enter your message</textarea>
-                <button type="submit">Send Test</button>
-            </form>
-        </div>
-    )
-}
 
 export default Contact;
