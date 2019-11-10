@@ -12,9 +12,9 @@ const Footer = () => (
     </div>
     <div id="footer-copyright">Copyright © 2019 Jeremie Aubeau</div>
     <div id="footer-socialNetworks">
-      <a href="https://www.linkedin.com/in/jeremie-aubeau/" target="_blank"><Icon name="linkedin" size="big" /></a>
-      <a href="https://github.com/MarshMallowFR" target="_blank"><Icon name="github" size="big" /></a>
-      <a href="https://twitter.com/FrMallow" target="_blank"><Icon name="twitter" size="big" /></a>
+      <a href="https://www.linkedin.com/in/jeremie-aubeau/" target="_blank" rel= "noopener noreferrer"><Icon name="linkedin" size="big" /></a>
+      <a href="https://github.com/MarshMallowFR" target="_blank" rel= "noopener noreferrer"><Icon name="github" size="big" /></a>
+      <a href="https://twitter.com/FrMallow" target="_blank" rel= "noopener noreferrer"><Icon name="twitter" size="big" /></a>
     </div>
   </div>
 )

@@ -18,7 +18,7 @@ const Work = () => (
                     </div>
                 </div>
             </a>
-            <a href="#">
+            <a href="https://www.fitiyoo.com/">
                 <div className="view link">
                     <img src={fitiyoo} alt="logo fitiyoo"/>
                     <div className="mask"></div>
